@@ -1,0 +1,19 @@
+# Labeled eval set for the sample synthetic report (doc_id printed by `make sample`).
+# expected_pages = the page that should answer the question (page-based citation, not Item).
+# Extend with real questions after uploading a real annual report.
+questions:
+  - question: What are the company's main risk factors?
+    expected_pages: [1]
+    expected_keywords: ["competition", "cybersecurity", "currency"]
+
+  - question: How much did revenue grow year over year?
+    expected_pages: [2]
+    expected_keywords: ["16%", "revenue", "exports"]
+
+  - question: What was the EBITDA margin and how did it change?
+    expected_pages: [2]
+    expected_keywords: ["21.4%", "basis points", "EBITDA"]
+
+  - question: What business segments does the company operate in?
+    expected_pages: [3]
+    expected_keywords: ["textiles", "chemicals", "packaging"]
